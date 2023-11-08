@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { StatisticList } from './App.styled';
 
 export default function Statistics({
   good,
@@ -8,13 +9,12 @@ export default function Statistics({
   positivePercentage,
 }) {
   return (
-    <ul>
-      Statistics
+    <StatisticList>
       <li>Good: {good}</li>
       <li> Neutral: {neutral}</li>
       <li>Bad: {bad}</li>
       <li>Total: {total}</li>
       <li>Positive feedback: {positivePercentage}%</li>
-    </ul>
+    </StatisticList>
   );
 }

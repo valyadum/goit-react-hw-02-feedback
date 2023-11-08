@@ -3,6 +3,7 @@ import Statistics from './Statistics';
 import FeedbackOptions from './FeedbackOptions';
 import { Section } from './Section'
 import { Notification } from './Notification';
+import { Container } from './App.styled';
 
 
 
@@ -33,7 +34,7 @@ class App extends Component {
     const { good, neutral, bad } = this.state;
     //const { total } = this.countTotalFeedback();
     return (
-      <>
+      <Container>
         <Section title=" Please leave feedback">
           <FeedbackOptions
             options={Object.keys(this.state)}
@@ -53,7 +54,7 @@ class App extends Component {
             />
           )}
         </Section>
-      </>
+      </Container>
     );
   }
 }
