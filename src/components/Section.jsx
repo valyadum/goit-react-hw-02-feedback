@@ -1,5 +1,5 @@
-import React, { Children } from 'react';
-import { SectionStyle, Title } from './App.styled';
+
+import {  Title } from './App.styled';
 
 export const Section = ({title, children}) => {
   return (

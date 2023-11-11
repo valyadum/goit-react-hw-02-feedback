@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+
 import { StatisticList } from './App.styled';
 
 export default function Statistics({
